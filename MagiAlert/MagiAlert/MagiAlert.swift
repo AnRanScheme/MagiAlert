@@ -190,7 +190,10 @@ class MagiAlert: UIViewController {
         var buttonX = (kContentWidth - totalWidth ) / 2.0
         for i in 0 ..< buttons.count {
             
-            buttons[i].frame = CGRect(x: buttonX, y: y, width: buttonRect[i].size.width + 20.0, height: buttonRect[i].size.height + 10.0)
+            buttons[i].frame = CGRect(x: buttonX,
+                                      y: y,
+                                      width: buttonRect[i].size.width + 20.0,
+                                      height: buttonRect[i].size.height + 10.0)
             buttonX = buttons[i].frame.origin.x + kWidthMargin + buttonRect[i].size.width + 20.0
             buttons[i].layer.cornerRadius = 5.0
             self.contentView.addSubview(buttons[i])
