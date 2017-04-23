@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHs-SU-Lq6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DeF-HR-eal"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.093922637182352678" blue="0.96119791666666665" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0Y-WE-50s">
+                                <color key="backgroundColor" red="1" green="0.97708476527800869" blue="0.62723645461038502" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="V4E-fA-gd6"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.97708476529999999" blue="0.62723645459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="开始录音">
+                                    <color key="titleColor" red="0.24766072548243101" green="0.87167467948717947" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="结束录音">
+                                    <color key="titleColor" red="1" green="0.2075900027" blue="0.087199643869999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickedRecordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZp-vi-ksr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhg-q9-PYx">
+                                <color key="backgroundColor" red="0.84463227478786185" green="0.93297717135695346" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="KHZ-Cb-URm"/>
+                                    <constraint firstAttribute="height" constant="68" id="hy9-9k-ztP"/>
+                                </constraints>
+                                <state key="normal" title="转码为MP3">
+                                    <color key="titleColor" red="0.74600736349735519" green="0.24586886949995812" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickedTranscodingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6T-vC-eb9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i0Y-WE-50s" secondAttribute="trailing" constant="128" id="5zF-eW-kOu"/>
+                            <constraint firstAttribute="trailing" secondItem="OHs-SU-Lq6" secondAttribute="trailing" constant="30" id="6br-ED-bRR"/>
+                            <constraint firstItem="OHs-SU-Lq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="BW3-Zu-xRQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i0Y-WE-50s" secondAttribute="bottom" constant="208" id="C52-UI-Wzg"/>
+                            <constraint firstAttribute="trailing" secondItem="jhg-q9-PYx" secondAttribute="trailing" constant="128" id="HG4-dp-FYW"/>
+                            <constraint firstItem="i0Y-WE-50s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="128" id="Inj-Tg-tH7"/>
+                            <constraint firstItem="jhg-q9-PYx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="128" id="RqY-Do-hp9"/>
+                            <constraint firstItem="OHs-SU-Lq6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="gO7-H9-WSk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jhg-q9-PYx" secondAttribute="bottom" constant="109" id="mYL-kb-mFG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="OHs-SU-Lq6" id="aHy-j7-nBh"/>
+                        <outlet property="recordButton" destination="i0Y-WE-50s" id="gNp-DF-wl2"/>
+                        <outlet property="transcodingButton" destination="jhg-q9-PYx" id="KDU-tu-9fm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111.2" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

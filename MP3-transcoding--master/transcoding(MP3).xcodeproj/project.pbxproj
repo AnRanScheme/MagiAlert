@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C88BA01DD622830028AC42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88B9F1DD622830028AC42 /* main.m */; };
+		D8C88BA31DD622830028AC42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88BA21DD622830028AC42 /* AppDelegate.m */; };
+		D8C88BA61DD622830028AC42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88BA51DD622830028AC42 /* ViewController.m */; };
+		D8C88BA91DD622830028AC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C88BA71DD622830028AC42 /* Main.storyboard */; };
+		D8C88BAB1DD622830028AC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C88BAA1DD622830028AC42 /* Assets.xcassets */; };
+		D8C88BAE1DD622830028AC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C88BAC1DD622830028AC42 /* LaunchScreen.storyboard */; };
+		D8C88BB71DD625FC0028AC42 /* XDRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88BB61DD625FC0028AC42 /* XDRecorder.m */; };
+		D8C88BBB1DD634DB0028AC42 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C88BBA1DD634DB0028AC42 /* libmp3lame.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8C88B9B1DD622830028AC42 /* transcoding(MP3).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transcoding(MP3).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C88B9F1DD622830028AC42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8C88BA11DD622830028AC42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8C88BA21DD622830028AC42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8C88BA41DD622830028AC42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8C88BA51DD622830028AC42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8C88BA81DD622830028AC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8C88BAA1DD622830028AC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C88BAD1DD622830028AC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C88BAF1DD622830028AC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C88BB51DD625FC0028AC42 /* XDRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDRecorder.h; sourceTree = "<group>"; };
+		D8C88BB61DD625FC0028AC42 /* XDRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDRecorder.m; sourceTree = "<group>"; };
+		D8C88BB91DD634DB0028AC42 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		D8C88BBA1DD634DB0028AC42 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C88B981DD622820028AC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C88BBB1DD634DB0028AC42 /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C88B921DD622820028AC42 = {
+			isa = PBXGroup;
+			children = (
+				D8C88B9D1DD622830028AC42 /* transcoding(MP3) */,
+				D8C88B9C1DD622830028AC42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C88B9C1DD622830028AC42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C88B9B1DD622830028AC42 /* transcoding(MP3).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C88B9D1DD622830028AC42 /* transcoding(MP3) */ = {
+			isa = PBXGroup;
+			children = (
+				D8C88BB81DD634DB0028AC42 /* lame */,
+				D8C88BA11DD622830028AC42 /* AppDelegate.h */,
+				D8C88BA21DD622830028AC42 /* AppDelegate.m */,
+				D8C88BA41DD622830028AC42 /* ViewController.h */,
+				D8C88BA51DD622830028AC42 /* ViewController.m */,
+				D8C88BB51DD625FC0028AC42 /* XDRecorder.h */,
+				D8C88BB61DD625FC0028AC42 /* XDRecorder.m */,
+				D8C88BA71DD622830028AC42 /* Main.storyboard */,
+				D8C88BAA1DD622830028AC42 /* Assets.xcassets */,
+				D8C88BAC1DD622830028AC42 /* LaunchScreen.storyboard */,
+				D8C88BAF1DD622830028AC42 /* Info.plist */,
+				D8C88B9E1DD622830028AC42 /* Supporting Files */,
+			);
+			path = "transcoding(MP3)";
+			sourceTree = "<group>";
+		};
+		D8C88B9E1DD622830028AC42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C88B9F1DD622830028AC42 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8C88BB81DD634DB0028AC42 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				D8C88BB91DD634DB0028AC42 /* lame.h */,
+				D8C88BBA1DD634DB0028AC42 /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C88B9A1DD622820028AC42 /* transcoding(MP3) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C88BB21DD622830028AC42 /* Build configuration list for PBXNativeTarget "transcoding(MP3)" */;
+			buildPhases = (
+				D8C88B971DD622820028AC42 /* Sources */,
+				D8C88B981DD622820028AC42 /* Frameworks */,
+				D8C88B991DD622820028AC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "transcoding(MP3)";
+			productName = "transcoding(MP3)";
+			productReference = D8C88B9B1DD622830028AC42 /* transcoding(MP3).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C88B931DD622820028AC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = xindong;
+				TargetAttributes = {
+					D8C88B9A1DD622820028AC42 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UR64V2B78K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8C88B961DD622820028AC42 /* Build configuration list for PBXProject "transcoding(MP3)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8C88B921DD622820028AC42;
+			productRefGroup = D8C88B9C1DD622830028AC42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C88B9A1DD622820028AC42 /* transcoding(MP3) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C88B991DD622820028AC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C88BAE1DD622830028AC42 /* LaunchScreen.storyboard in Resources */,
+				D8C88BAB1DD622830028AC42 /* Assets.xcassets in Resources */,
+				D8C88BA91DD622830028AC42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C88B971DD622820028AC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C88BA61DD622830028AC42 /* ViewController.m in Sources */,
+				D8C88BB71DD625FC0028AC42 /* XDRecorder.m in Sources */,
+				D8C88BA31DD622830028AC42 /* AppDelegate.m in Sources */,
+				D8C88BA01DD622830028AC42 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8C88BA71DD622830028AC42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C88BA81DD622830028AC42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8C88BAC1DD622830028AC42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C88BAD1DD622830028AC42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C88BB01DD622830028AC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8C88BB11DD622830028AC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C88BB31DD622830028AC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UR64V2B78K;
+				INFOPLIST_FILE = "transcoding(MP3)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/transcoding(MP3)/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xindong.transcoding-MP3-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8C88BB41DD622830028AC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UR64V2B78K;
+				INFOPLIST_FILE = "transcoding(MP3)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/transcoding(MP3)/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xindong.transcoding-MP3-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C88B961DD622820028AC42 /* Build configuration list for PBXProject "transcoding(MP3)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C88BB01DD622830028AC42 /* Debug */,
+				D8C88BB11DD622830028AC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C88BB21DD622830028AC42 /* Build configuration list for PBXNativeTarget "transcoding(MP3)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C88BB31DD622830028AC42 /* Debug */,
+				D8C88BB41DD622830028AC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C88B931DD622820028AC42 /* Project object */;
+}
