@@ -53,6 +53,17 @@ class ViewController: UIViewController {
         self.view.addSubview(stopPlayBtn)
         stopPlayBtn.backgroundColor = UIColor.black
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let trans = UIButton.init(frame: CGRect(x: 20,
+                                                      y: 470,
+                                                      width: 100,
+                                                      height: 100))
+        trans.setTitle("stopPlay", for: UIControlState())
+        trans.addTarget(self,
+                                action: #selector(ViewController.transfrom),
+                                for: UIControlEvents.touchUpInside)
+        self.view.addSubview(trans)
+        trans.backgroundColor = UIColor.purple
     }
     
     func startRecord(){
@@ -72,7 +83,7 @@ class ViewController: UIViewController {
             arr = a as! [[String : String]]
             //获取最后一首录音
             var dict = arr[arr.count - 1]
-            RecorderTool.getTool().playRecord(dict["path"]!)
+            RecorderTool.getTool().playRecord(RecorderTool.getTool().mp3Path!)
         }
     }
     func stopPlay(){
@@ -87,6 +98,23 @@ class ViewController: UIViewController {
         }
 
     }
+    
+    func transfrom() {
+        let userdefault = UserDefaults.standard
+        var arr = [[String : String]]()
+        if let a = userdefault.object(forKey: "audio")
+        {
+            arr = a as! [[String : String]]
+            //获取最后一首录音
+            var dict = arr[arr.count - 1]
+            TranscodingMp3.sharedTranscoding().transcoding(dict["path"]!,
+                                                           toMP3: RecorderTool.getTool().mp3Path)
+        }
+        
+        print("-------------\(RecorderTool.getTool().mp3Path)")
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

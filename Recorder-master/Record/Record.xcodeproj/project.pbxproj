@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B08C4A1EAD7B65007E41F5 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B08C491EAD7B65007E41F5 /* libmp3lame.a */; };
+		35B08C511EAD8950007E41F5 /* TranscodingMp3.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B08C501EAD8950007E41F5 /* TranscodingMp3.m */; };
 		6C3CA64B1C9D2ACC0019ADC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CA64A1C9D2ACC0019ADC8 /* AppDelegate.swift */; };
 		6C3CA64D1C9D2ACC0019ADC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CA64C1C9D2ACC0019ADC8 /* ViewController.swift */; };
 		6C3CA6501C9D2ACC0019ADC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3CA64E1C9D2ACC0019ADC8 /* Main.storyboard */; };
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35B08C481EAD7B65007E41F5 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		35B08C491EAD7B65007E41F5 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		35B08C4E1EAD8950007E41F5 /* Record-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Record-Bridging-Header.h"; sourceTree = "<group>"; };
+		35B08C4F1EAD8950007E41F5 /* TranscodingMp3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranscodingMp3.h; sourceTree = "<group>"; };
+		35B08C501EAD8950007E41F5 /* TranscodingMp3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranscodingMp3.m; sourceTree = "<group>"; };
 		6C3CA6471C9D2ACB0019ADC8 /* Record.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Record.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3CA64A1C9D2ACC0019ADC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C3CA64C1C9D2ACC0019ADC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B08C4A1EAD7B65007E41F5 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B08C471EAD7B65007E41F5 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				35B08C4F1EAD8950007E41F5 /* TranscodingMp3.h */,
+				35B08C501EAD8950007E41F5 /* TranscodingMp3.m */,
+				35B08C481EAD7B65007E41F5 /* lame.h */,
+				35B08C491EAD7B65007E41F5 /* libmp3lame.a */,
+				35B08C4E1EAD8950007E41F5 /* Record-Bridging-Header.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
 		6C3CA63E1C9D2ACB0019ADC8 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +122,7 @@
 		6C97384A1C9D2B9000284974 /* third */ = {
 			isa = PBXGroup;
 			children = (
+				35B08C471EAD7B65007E41F5 /* lame */,
 				6C97384B1C9D2B9000284974 /* RecorderTool */,
 			);
 			path = third;
@@ -160,7 +181,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = mjia;
 				TargetAttributes = {
 					6C3CA6461C9D2ACB0019ADC8 = {
@@ -222,6 +243,7 @@
 				6C3CA64D1C9D2ACC0019ADC8 /* ViewController.swift in Sources */,
 				6C999BAF1CA58940005BB705 /* RecorderTool.swift in Sources */,
 				6C3CA64B1C9D2ACC0019ADC8 /* AppDelegate.swift in Sources */,
+				35B08C511EAD8950007E41F5 /* TranscodingMp3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +298,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -320,8 +344,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -340,6 +366,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -348,12 +375,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = E8ZU3Y58CG;
 				INFOPLIST_FILE = Record/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third/lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mjia.Record;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "third/lame/Record-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -362,12 +396,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = E8ZU3Y58CG;
 				INFOPLIST_FILE = Record/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third/lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mjia.Record;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "third/lame/Record-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+
 class RecorderTool: NSObject {
     var recorder :AVAudioRecorder?
     var player: AVAudioPlayer!
@@ -15,6 +16,11 @@ class RecorderTool: NSObject {
     var recorderSeetingDic :[String : AnyObject]? //硬件设置
     var volumeTimer:Timer! //定时器线程，循环监测录音的音量大小
     var aacPath:String? //录音存储路径
+    
+    var mp3Path:String? //转换录音存储路径
+    
+    var mp3Pathjia:String?
+    
     var audioArr:[[String:String]] = [[:]] //录音信息数组
     var seconds:Float = 0   //记录录音时间
     static let tool:RecorderTool = RecorderTool()
@@ -42,12 +48,14 @@ class RecorderTool: NSObject {
             .userDomainMask, true)[0] as AnyObject
         //组合录音文件路径
         aacPath = (docDir as! String) + "/play1.pcm"
+        mp3Path = (docDir as! String) + "/play1.mp3"
         //初始化字典并添加设置参数
         recorderSeetingDic =
             [AVSampleRateKey : NSNumber(value: Float(44100.0) as Float),//声音采样率
-                AVFormatIDKey : NSNumber(value: Int32(kAudioFormatMPEG4AAC) as Int32),//编码格式
+                AVFormatIDKey : NSNumber(value: Int32(kAudioFormatLinearPCM) as Int32),//编码格式
                 AVNumberOfChannelsKey : NSNumber(value: 1 as Int32),//采集音轨
-                AVEncoderAudioQualityKey : NSNumber(value: Int32(AVAudioQuality.medium.rawValue) as Int32)]//音频质量
+                AVEncoderAudioQualityKey : NSNumber(value: Int32(AVAudioQuality.low.rawValue) as Int32),
+                AVLinearPCMBitDepthKey: NSNumber(value: 16 as Int32)]//音频质量
         recorder =  try! AVAudioRecorder(url: URL(string: aacPath!)!,
             settings: recorderSeetingDic!)
         
@@ -76,18 +84,17 @@ class RecorderTool: NSObject {
     func playRecord(_ aduioPath:String){
         
         do {
-            let session = AVAudioSession.sharedInstance();
+            let session = AVAudioSession.sharedInstance()
             try session.setCategory(AVAudioSessionCategoryPlayback)
             try session.setActive(true);
-            player = try AVAudioPlayer(contentsOf: URL(string: aduioPath)!)//(contentsOfURL: NSURL(string: aacPath!))
+            player = try AVAudioPlayer(contentsOf: URL(string: aduioPath)!)
         }
-        catch
-        {
+        catch {
             print("播放失败")
         }
         if player == nil {
             print("播放失败")
-        }else{
+        } else {
             player.prepareToPlay()
             player.play()
         }
@@ -118,6 +125,7 @@ class RecorderTool: NSObject {
         let timeInterval =  date.timeIntervalSince1970*1000
         let timeStr = String(format:"%f",timeInterval)
         let saveAacPath = (docDir as! String) + "/audio/" + timeStr + ".pcm"
+        mp3Pathjia = (docDir as! String) + "/audio/" + timeStr + ".mp3"
         //
         let fileManager = FileManager.default
         //创建另存为路径
@@ -188,6 +196,7 @@ class RecorderTool: NSObject {
         
         
     }
+    
     //定时检测录音音量
     func levelTimer(){
         recorder!.updateMeters() // 刷新音量数据

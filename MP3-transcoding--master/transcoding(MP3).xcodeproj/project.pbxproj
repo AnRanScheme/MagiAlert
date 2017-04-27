@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B08C4D1EAD82AA007E41F5 /* TranscodingMp3.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B08C4C1EAD82AA007E41F5 /* TranscodingMp3.m */; };
 		D8C88BA01DD622830028AC42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88B9F1DD622830028AC42 /* main.m */; };
 		D8C88BA31DD622830028AC42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88BA21DD622830028AC42 /* AppDelegate.m */; };
 		D8C88BA61DD622830028AC42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C88BA51DD622830028AC42 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B08C4B1EAD82AA007E41F5 /* TranscodingMp3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranscodingMp3.h; sourceTree = "<group>"; };
+		35B08C4C1EAD82AA007E41F5 /* TranscodingMp3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranscodingMp3.m; sourceTree = "<group>"; };
 		D8C88B9B1DD622830028AC42 /* transcoding(MP3).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transcoding(MP3).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C88B9F1DD622830028AC42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8C88BA11DD622830028AC42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 			children = (
 				D8C88BB91DD634DB0028AC42 /* lame.h */,
 				D8C88BBA1DD634DB0028AC42 /* libmp3lame.a */,
+				35B08C4B1EAD82AA007E41F5 /* TranscodingMp3.h */,
+				35B08C4C1EAD82AA007E41F5 /* TranscodingMp3.m */,
 			);
 			path = lame;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B08C4D1EAD82AA007E41F5 /* TranscodingMp3.m in Sources */,
 				D8C88BA61DD622830028AC42 /* ViewController.m in Sources */,
 				D8C88BB71DD625FC0028AC42 /* XDRecorder.m in Sources */,
 				D8C88BA31DD622830028AC42 /* AppDelegate.m in Sources */,
